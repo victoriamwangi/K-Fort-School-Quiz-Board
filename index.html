@@ -11,17 +11,14 @@
   <body>
     <div class="container">
       <div class="row">
-        <div
-          class="col-md-3 col-lg-2"
-          style="background-color: blue"
-          id="col1"
-        ></div>
+        <div class="col-md-3 col-lg-2" id="col1"></div>
         <div class="col-md-3 col-lg-8" id="col2">
+          <button class="page-no">1/10</button>
           <form
             action="
           "
           >
-            <div class="form-check">
+            <!-- <div class="form-check">
               <p class="question">1)Which one is a global variable</p>
               <div class="opt">
                 <label class="form-check-label">
@@ -75,9 +72,9 @@
                   Display value
                 </label>
               </div>
-            </div>
+            </div> -->
 
-            <div class="form-check">
+            <!-- <div class="form-check">
               <p class="question" class="question">
                 2)Which one is a global variable
               </p>
@@ -133,15 +130,18 @@
                   Display value
                 </label>
               </div>
-              <div class="form-check">
-                <p>
-                  function find_max(nums) { <br />let max_num =
-                  Number.NEGATIVE_INFINITY; // smaller than all other numbers<br />
-                  for (let num of nums)}<br />
-                  {if (num > max_num) {<br />
-                  // (Fill in the missing line here) <br />} <br />}
-                  <br />return max_num; }
-                </p>
+            </div> -->
+            <div class="form-check">
+              <p class="question">
+                1) function find_max(nums) { <br />
+                let max_num = Number.NEGATIVE_INFINITY; // smaller than all
+                other numbers<br />
+                for (let num of nums)}<br />
+                {if (num > max_num) {<br />
+                // (Fill in the missing line here) <br />} <br />} <br />return
+                max_num; }
+              </p>
+              <div class="opt">
                 <label class="form-check-label">
                   <input
                     type="radio"
@@ -151,19 +151,58 @@
                     value="checkedValue"
                     checked
                   />
-                  Display value
+                  max_num>num
+                </label>
+              </div>
+              <div class="opt">
+                <label class="form-check-label">
+                  <input
+                    type="radio"
+                    class="form-check-input"
+                    name=""
+                    id=""
+                    value="checkedValue"
+                    checked
+                  />
+                  num> max_num
+                </label>
+              </div>
+              <div class="opt">
+                <label class="form-check-label">
+                  <input
+                    type="radio"
+                    class="form-check-input"
+                    name=""
+                    id=""
+                    value="checkedValue"
+                    checked
+                  />
+                  max_num=+num
+                </label>
+              </div>
+              <div class="opt">
+                <label class="form-check-label">
+                  <input
+                    type="radio"
+                    class="form-check-input"
+                    name=""
+                    id=""
+                    value="checkedValue"
+                    checked
+                  />
+                  num=+max_num
                 </label>
               </div>
             </div>
+            <div class="btns">
+              <button class="navigate-btn" id="pre">PREVIOUS</button>
+              <button class="navigate-btn" id="next">NEXT</button>
+            </div>
 
-            <button type="submit">Submit</button>
+            <!-- <button type="submit">Submit</button> -->
           </form>
         </div>
-        <div
-          class="col-md-3 col-lg-2"
-          style="background-color: yellow"
-          id="col3"
-        ></div>
+        <div class="col-md-3 col-lg-2" id="col3"></div>
       </div>
     </div>
 

@@ -8,19 +8,41 @@ body{
     height: 100vh;
     color: white;
     font-weight: 800;
+
 }
 
 .row{
     height: 100%;
+    
 }
 #col1, #col2, #col3{
     height: 100%;
 }
 #col2{
     background-color: #1E1E1E;
+    padding-top: 5vw;
+}
+#col1, #col3{
+    background-color: #FAFFFF;
+}
+.page-no{
+    background: none;
+    color: #B3FF78;
+    height: 3vw;
+    width: 4vw;
+    position: relative;
+    right: -10vw;
+    /* border: none; */
+
 }
 form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+}
+.form-check{
+
 }
 .opt{
     padding-top: 1.1vw;
@@ -31,6 +53,22 @@ form {
 }
 
 label{
-    margin-right: 20px;
-  /* color: red;  */
+   color: #78F7FF;
+}
+
+.btns{
+    width: 69%  ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 4vw;
+}
+
+.navigate-btn {
+color:#B3FF78;
+border: white solid 3px;
+background: none ;
+}
+#next, #pre {
+    width: 8vw;;
 }
