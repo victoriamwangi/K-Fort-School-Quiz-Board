@@ -3,3 +3,34 @@ body{
     margin: 0;
     padding: 0;
 }
+.container{
+    width: 100% ;
+    height: 100vh;
+    color: white;
+    font-weight: 800;
+}
+
+.row{
+    height: 100%;
+}
+#col1, #col2, #col3{
+    height: 100%;
+}
+#col2{
+    background-color: #1E1E1E;
+}
+form {
+    align-items: center;
+}
+.opt{
+    padding-top: 1.1vw;
+}
+.question{
+    padding-top: 2vw;
+    font-size: 1.2vw;
+}
+
+label{
+    margin-right: 20px;
+  /* color: red;  */
+}
