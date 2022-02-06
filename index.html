@@ -72,7 +72,13 @@
                     </div>
                   </div>
                 </div>
-                <button type="button" class="switch-tabs" data-target="tab-2">
+                <button
+                  type="button"
+                  class="switch-tabs"
+                  data-target="tab-2"
+                  data-question="question-1"
+                  data-answer="1"
+                >
                   NEXT
                 </button>
               </div>
@@ -123,7 +129,13 @@
                 <button type="button" class="switch-tabs" data-target="tab-1">
                   Prev
                 </button>
-                <button type="button" class="switch-tabs" data-target="tab-3">
+                <button
+                  type="button"
+                  class="switch-tabs"
+                  data-target="tab-3"
+                  data-question="question-1"
+                  data-answer="2"
+                >
                   Next
                 </button>
               </div>
@@ -173,8 +185,126 @@
                 <button type="button" class="switch-tabs" data-target="tab-2">
                   Prev
                 </button>
-                <button type="button" class="switch-tabs" data-target="tab-4">
+                <button
+                  type="button"
+                  class="switch-tabs"
+                  data-target="tab-4"
+                  data-question="question-3"
+                  data-answer="3"
+                >
                   Next
+                </button>
+              </div>
+              <div class="tabs" id="tab-4">
+                <h3 class="tab-counter"></h3>
+                <div class="question-tab">
+                  <p class="question">
+                    1) function find_max(nums) { <br />
+                    let max_num = Number.NEGATIVE_INFINITY; // smaller than all
+                    other numbers<br />
+                    for (let num of nums)}<br />
+                    {if (num > max_num) {<br />
+                    // (Fill in the missing line here) <br />} <br />}
+                    <br />return max_num; }
+                  </p>
+                  <div class="answers" datatype="radio" id="question-4">
+                    <div class="answer-tab" data-parent="question-4">
+                      <input
+                        type="radio"
+                        name="question-4"
+                        value="1"
+                        class="radio"
+                        selected
+                      />
+                      <label>max_num>num</label>
+                    </div>
+                    <div class="answer-tab" data-parent="question-4">
+                      <input
+                        type="radio"
+                        name="question-4"
+                        value="2"
+                        class="radio"
+                      />
+                      <label>max_num>num</label>
+                    </div>
+                    <div class="answer-tab" data-parent="question-4">
+                      <input
+                        type="radio"
+                        name="question-4"
+                        value="3"
+                        class="radio"
+                      />
+                      <label>max_num>num</label>
+                    </div>
+                  </div>
+                </div>
+                <button type="button" class="switch-tabs" data-target="tab-3">
+                  Prev
+                </button>
+                <button
+                  type="button"
+                  class="switch-tabs"
+                  data-target="tab-5"
+                  data-question="question-4"
+                  data-answer="4"
+                >
+                  NEXT
+                </button>
+              </div>
+              <div class="tabs" id="tab-5">
+                <h3 class="tab-counter"></h3>
+                <div class="question-tab">
+                  <p class="question">
+                    1) function find_max(nums) { <br />
+                    let max_num = Number.NEGATIVE_INFINITY; // smaller than all
+                    other numbers<br />
+                    for (let num of nums)}<br />
+                    {if (num > max_num) {<br />
+                    // (Fill in the missing line here) <br />} <br />}
+                    <br />return max_num; }
+                  </p>
+                  <div class="answers" datatype="radio" id="question-3">
+                    <div class="answer-tab" data-parent="question-5">
+                      <input
+                        type="radio"
+                        name="question-5"
+                        value="1"
+                        class="radio"
+                        selected
+                      />
+                      <label>max_num>num</label>
+                    </div>
+                    <div class="answer-tab" data-parent="question-5">
+                      <input
+                        type="radio"
+                        name="question-5"
+                        value="2"
+                        class="radio"
+                      />
+                      <label>max_num>num</label>
+                    </div>
+                    <div class="answer-tab" data-parent="question-5">
+                      <input
+                        type="radio"
+                        name="question-5"
+                        value="3"
+                        class="radio"
+                      />
+                      <label>max_num>num</label>
+                    </div>
+                  </div>
+                </div>
+                <button type="button" class="switch-tabs" data-target="tab-4">
+                  Prev
+                </button>
+                <button
+                  type="button"
+                  class="switch-tabs"
+                  data-target="submit"
+                  data-question="question-5"
+                  data-answer="2"
+                >
+                  SUBMIT
                 </button>
               </div>
             </div>
