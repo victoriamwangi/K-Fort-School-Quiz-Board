@@ -36,8 +36,8 @@ The website is accessed using a user's preffered browser therefore requires no i
 
 ## Reference
 
-- Materialize CSS
-  [Go Back to the top](#description)
+- [Here is a link to the UI design](https://www.figma.com/file/8rSsSDnhB1uI5JZBWxmToy/quizpage?node-id=0%3A1)
+  
 
 ## Licence
 
