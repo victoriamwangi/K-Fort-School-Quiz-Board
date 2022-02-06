@@ -43,7 +43,7 @@ color: #1E1E1E;
     height: 100%;
 }
 #col1 {
-    color: #78F7FF;
+   
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -70,15 +70,22 @@ color: #1E1E1E;
 }
 #col1 .grades p{
     color:#1E1E1E;
-    font-size: 1.5vw;
+    font-size: 1.1vw;
 }
 #col1 .grades ul li{
-    font-size: 1.4vw;
+    font-size: 1.1vw;
     list-style: none;
     padding-top: 1.1vw ;
+     color: #1E1E1E;
+    
+}
+#col1 .grades ul li span{
+color:#78F7FF;
+font-weight: 1.3vw;
 }
 .logo h2{
-    color:#1E1E1E;
+    color:#78F7FF;
+    margin-top: 0;
     
 }
 #col2 {
