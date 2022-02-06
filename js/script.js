@@ -91,7 +91,13 @@ function calculateFinalResult() {
     result_tab.querySelector('#result-percentage').innerHTML = percentage + "%";
     result_tab.querySelector('#grade').innerHTML = "Grade: " + grade;
 
+    if (percentage < 80) {
+        result_tab.querySelector("#retake-test").disabled = false;
+    }
 
+}
+function retakeTest() {
+    window.location.reload();
 }
 var answers = document.querySelectorAll('.answer-tab');
 for (var a = 0; a < answers.length; a++) {
