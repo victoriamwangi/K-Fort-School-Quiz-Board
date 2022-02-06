@@ -61,8 +61,8 @@ function saveSelection(selection, answer, question) {
 
 }
 function calculateFinalResult() {
-    var final_score = 0, percentage,
-        questions = document.querySelectorAll('.question').length;
+    var final_score = 0, percentage, grade
+    questions = document.querySelectorAll('.question').length;
     for (var j = 0; j < selection_arr.length; j++) {
         var arr = selection_arr[j];
         final_score += arr.score;
@@ -74,10 +74,22 @@ function calculateFinalResult() {
     } else {
         percentage = 0;
     }
+    if (percentage >= 80) {
+        grade = "A";
+    } else if (percentage >= 70) {
+        grade = "B";
+    } else if (percentage >= 60) {
+        grade = "C";
+    } else if (percentage >= 50) {
+        grade = "D";
+    } else {
+        grade = "Fail";
+    }
 
 
     result_tab.querySelector('#result-score').innerHTML = final_score + " out of " + questions;
     result_tab.querySelector('#result-percentage').innerHTML = percentage + "%";
+    result_tab.querySelector('#grade').innerHTML = "Grade: " + grade;
 
 
 }
