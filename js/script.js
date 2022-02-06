@@ -61,7 +61,7 @@ function saveSelection(selection, answer, question) {
 
 }
 function calculateFinalResult() {
-    var final_score = 0,
+    var final_score = 0, percentage,
         questions = document.querySelectorAll('.question').length;
     for (var j = 0; j < selection_arr.length; j++) {
         var arr = selection_arr[j];
@@ -69,7 +69,15 @@ function calculateFinalResult() {
     }
     var result_tab = document.querySelector('#result-tab');
 
+    if (final_score > 0) {
+        percentage = final_score / questions * 100;
+    } else {
+        percentage = 0;
+    }
+
+
     result_tab.querySelector('#result-score').innerHTML = final_score + " out of " + questions;
+    result_tab.querySelector('#result-percentage').innerHTML = percentage + "%";
 
 
 }
