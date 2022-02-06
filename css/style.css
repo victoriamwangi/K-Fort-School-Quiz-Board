@@ -17,7 +17,19 @@ body{
 #col1, #col2, #col3{
     height: 100%;
 }
-#col2{
+#col1 {
+    color: #78F7FF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 20vw;
+
+}
+#col1 p, 
+.logo h2 {
+    color: #78F7FF;
+}
+#col2 {
     background-color: #1E1E1E;
     padding-top: 5vw;
     padding-bottom: 10vw;
@@ -70,15 +82,4 @@ width: 8vw;
 height: 3vw;
 margin-top: 3vw;
 
-}
-#col1{
-color: #78F7FF;
-display: flex;
-flex-direction: column;
-align-items: center;
-top: 20vw;
-
-}
-.logo h2{
-    color: #78F7FF;
 }

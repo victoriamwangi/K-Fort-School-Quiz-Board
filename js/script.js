@@ -1,6 +1,7 @@
 var btns = document.querySelectorAll(".switch-tabs");
 const tabs_main = document.querySelectorAll('.tabs');
 const tab_count = document.querySelectorAll('.tabs').length;
+var selection_arr = [];
 
 for (var x = 0; x < tabs_main.length; x++) {
     var tab_counter = tabs_main[x].querySelector('.tab-counter');
@@ -16,7 +17,7 @@ for (var i = 0; i < btns.length; i++) {
         var answer = e.target.dataset.answer;
         var selection = "";
 
-        var radios = document.getElementsByClassName(question);
+        var radios = document.getElementsByName(question);
 
         for (var radio of radios) {
             if (radio.checked) {
@@ -30,6 +31,7 @@ for (var i = 0; i < btns.length; i++) {
             alert("Kindly select a value from the provided options");
             return false;
         }
+        saveSelection(selection, answer, question);
 
         //switch tabs
         var tabs = document.querySelectorAll('.tabs');
@@ -37,11 +39,51 @@ for (var i = 0; i < btns.length; i++) {
             tabs[t].classList.remove('active');
         }
         if (id == "submit") {
-            document.querySelector('result-tab').classList.add('active');
+            calculateFinalResult();
+            document.querySelector('#result-tab').classList.add('active');
         } else {
-            var nextTab = document.getElementById(Id);
+            var nextTab = document.getElementById(id);
             nextTab.classList.add('active');
         }
     });
 }
 
+function saveSelection(selection, answer, question) {
+    var arr = [];
+
+    if (selection == answer) {
+        arr.score = 1;
+    } else {
+        arr.score = 0;
+    }
+    arr.question = question;
+    selection_arr.push(arr);
+
+}
+function calculateFinalResult() {
+    var final_score = 0,
+        questions = document.querySelectorAll('.question').length;
+    for (var j = 0; j < selection_arr.length; j++) {
+        var arr = selection_arr[j];
+        final_score += arr.score;
+    }
+    var result_tab = document.querySelector('#result-tab');
+
+    result_tab.querySelector('#result-score').innerHTML = final_score + " out of " + questions;
+
+
+}
+var answers = document.querySelectorAll('.answer-tab');
+for (var a = 0; a < answers.length; a++) {
+    answers[a].addEventListener("click", function (e) {
+        var parent_id = e.target.dataset.parent;
+        var parent = document.getElementById(parent_id);
+        var siblings = parent.querySelectorAll('.answer-tab');
+        for (var z = 0; z < siblings.length; z++) {
+            siblings[z].classList.remove('selected');
+            siblings[z].querySelector('input').checked = false;
+        }
+        e.target.classList.add('selected');
+        e.target.querySelector('input').checked = true;
+    });
+}
