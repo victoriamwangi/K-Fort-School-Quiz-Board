@@ -3,11 +3,33 @@ body{
     margin: 0;
     padding: 0;
     max-height: 100vh !important;
+    overflow-y: hidden;
+}
+#navId{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   background-color: #FAFFFF;
+   width: 100%;
+   border: none;
+   background-color: #78F7FF;
+}
+#navId li{
+padding-left: 5%;
+
+}
+#navId li a{
+color: #1E1E1E;
+}
+#navId li a:hover{
+    text-decoration: underline 2px solid #78F7FF;
+    
 }
 .container{
     width: 100% ;
     color: white;
     font-weight: 800;
+
 }
 
 .row{
@@ -22,8 +44,9 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    top: 10vw;
-
+    padding-top: 10vw;
+    height: 100vh;
+    background-color: #FAFFFF;
 }
 #col1 .js {
     color: #1E1E1E;
@@ -60,9 +83,7 @@ body{
     padding-top: 5vw;
     padding-bottom: 10vw;
 }
-#col1, #col3{
-    background-color: #FAFFFF;
-}
+
 .tab-counter{
     background: none;
     color: #B3FF78;
