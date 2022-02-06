@@ -5,21 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <div class="container">
       <div class="row">
-        <div class="col-md-3 col-lg-2" id="col1"></div>
+        <div class="col-md-3 col-lg-2" id="col1">
+          <div class="logo">
+            <h2>K-Fort</h2>
+          </div>
+          <p>JAVASCRIPT QUIZ</p>
+          <p>GRADING SYSTEM</p>
+          <ul>
+            <li>=>80 : A></li>
+            <li>70- 79: B</li>
+            <li>60- 69: C</li>
+            <li>50- 59: D</li>
+            <li>0- 49: E</li>
+          </ul>
+        </div>
         <div class="col-md-3 col-lg-8" id="col2">
-          <button class="page-no">1/10</button>
-          <form
-            action="
-          "
-          >
+          <form action="">
             <div class="tabs-parent">
-              <div class="tabs-active">
+              <div class="tabs active" id="tab-1">
+                <h3 class="tab-counter"></h3>
                 <div class="question-tab">
                   <p class="question">
                     1) function find_max(nums) { <br />
@@ -30,12 +41,141 @@
                     // (Fill in the missing line here) <br />} <br />}
                     <br />return max_num; }
                   </p>
-                  <div class="answers">
-                    <div class="answers-tab">
-                      <input type="radio" />
+                  <div class="answers" datatype="radio" id="question-1">
+                    <div class="answer-tab selected" data-parent="question-1">
+                      <input
+                        type="radio"
+                        name="question-1"
+                        value="1"
+                        class="radio"
+                        selected
+                      />
+                      <label>max_num>num</label>
+                    </div>
+                    <div class="answer-tab" data-parent="question-1">
+                      <input
+                        type="radio"
+                        name="question-1"
+                        value="2"
+                        class="radio"
+                      />
+                      <label>max_num>num</label>
+                    </div>
+                    <div class="answer-tab" data-parent="question-1">
+                      <input
+                        type="radio"
+                        name="question-1"
+                        value="3"
+                        class="radio"
+                      />
+                      <label>max_num>num</label>
                     </div>
                   </div>
                 </div>
+                <button type="button" class="switch-tabs" data-target="tab-2">
+                  NEXT
+                </button>
+              </div>
+
+              <div class="tabs" id="tab-2">
+                <h3 class="tab-counter"></h3>
+                <div class="question-tab">
+                  <p class="question">
+                    1) function find_max(nums) { <br />
+                    let max_num = Number.NEGATIVE_INFINITY; // smaller than all
+                    other numbers<br />
+                    for (let num of nums)}<br />
+                    {if (num > max_num) {<br />
+                    // (Fill in the missing line here) <br />} <br />}
+                    <br />return max_num; }
+                  </p>
+                  <div class="answers" datatype="radio" id="question-2">
+                    <div class="answer-tab" data-parent="question-1">
+                      <input
+                        type="radio"
+                        name="question-2"
+                        value="1"
+                        class="radio"
+                        selected
+                      />
+                      <label>max_num>num</label>
+                    </div>
+                    <div class="answer-tab" data-parent="question-2">
+                      <input
+                        type="radio"
+                        name="question-1"
+                        value="2"
+                        class="radio"
+                      />
+                      <label>max_num>num</label>
+                    </div>
+                    <div class="answer-tab" data-parent="question-3">
+                      <input
+                        type="radio"
+                        name="question-3"
+                        value="3"
+                        class="radio"
+                      />
+                      <label>max_num>num</label>
+                    </div>
+                  </div>
+                </div>
+                <button type="button" class="switch-tabs" data-target="tab-1">
+                  Prev
+                </button>
+                <button type="button" class="switch-tabs" data-target="tab-3">
+                  Next
+                </button>
+              </div>
+              <div class="tabs" id="tab-3">
+                <h3 class="tab-counter"></h3>
+                <div class="question-tab">
+                  <p class="question">
+                    1) function find_max(nums) { <br />
+                    let max_num = Number.NEGATIVE_INFINITY; // smaller than all
+                    other numbers<br />
+                    for (let num of nums)}<br />
+                    {if (num > max_num) {<br />
+                    // (Fill in the missing line here) <br />} <br />}
+                    <br />return max_num; }
+                  </p>
+                  <div class="answers" datatype="radio" id="question-3">
+                    <div class="answer-tab" data-parent="question-3">
+                      <input
+                        type="radio"
+                        name="question-3"
+                        value="1"
+                        class="radio"
+                        selected
+                      />
+                      <label>max_num>num</label>
+                    </div>
+                    <div class="answer-tab" data-parent="question-3">
+                      <input
+                        type="radio"
+                        name="question-1"
+                        value="2"
+                        class="radio"
+                      />
+                      <label>max_num>num</label>
+                    </div>
+                    <div class="answer-tab" data-parent="question-3">
+                      <input
+                        type="radio"
+                        name="question-3"
+                        value="3"
+                        class="radio"
+                      />
+                      <label>max_num>num</label>
+                    </div>
+                  </div>
+                </div>
+                <button type="button" class="switch-tabs" data-target="tab-2">
+                  Prev
+                </button>
+                <button type="button" class="switch-tabs" data-target="tab-4">
+                  Next
+                </button>
               </div>
             </div>
           </form>

@@ -2,10 +2,11 @@ body{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    max-height: 100vh !important;
 }
 .container{
     width: 100% ;
-    height: 100vh;
+    overflow-y: hidden;
     color: white;
     font-weight: 800;
 
@@ -25,7 +26,7 @@ body{
 #col1, #col3{
     background-color: #FAFFFF;
 }
-.page-no{
+.tab-counter{
     background: none;
     color: #B3FF78;
     height: 3vw;
@@ -41,14 +42,12 @@ form {
     justify-content: center;
     align-items: center;
 }
-.form-check{
 
-}
-.opt{
+.tabs-parent{
     padding-top: 1.1vw;
 }
 .question{
-    padding-top: 2vw;
+    /* padding-top: 2vw; */
     font-size: 1.2vw;
 }
 
@@ -56,19 +55,40 @@ label{
    color: #78F7FF;
 }
 
-.btns{
+/* .switch-tabs{
     width: 69%  ;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-top: 4vw;
+} */
+.tabs{
+    display: none;
+}
+.tabs.active {
+    display: block !important;
+}
+.answer-tab.selected {
+    border-color: #B3FF78;
 }
 
-.navigate-btn {
+.switch-tabs {
 color:#B3FF78;
 border: white solid 3px;
 background: none ;
+width: 8vw;
+height: 3vw;
+margin-top: 3vw;
+
 }
-#next, #pre {
-    width: 8vw;;
+#col1{
+    color: #78F7FF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 20vw;
+
+}
+.logo h2{
+    color: #78F7FF;
 }
