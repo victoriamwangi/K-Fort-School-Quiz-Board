@@ -22,12 +22,38 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    top: 20vw;
+    top: 10vw;
 
 }
-#col1 p, 
-.logo h2 {
-    color: #78F7FF;
+#col1 .js {
+    color: #1E1E1E;
+    padding-top: 5vw;
+    font-style: italic;
+    font-size: 1.4vw;
+    
+}
+#col1 .grades{
+ box-shadow: 3px 2px 5px grey;
+ width: 15vw;
+ height: 25vw;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ padding-top: 5vw;
+
+}
+#col1 .grades p{
+    color:#1E1E1E;
+    font-size: 1.5vw;
+}
+#col1 .grades ul li{
+    font-size: 1.4vw;
+    list-style: none;
+    padding-top: 1.1vw ;
+}
+.logo h2{
+    color:#1E1E1E;
+    
 }
 #col2 {
     background-color: #1E1E1E;
