@@ -48,7 +48,7 @@ color: #1E1E1E;
     flex-direction: column;
     align-items: center;
     padding-top: 10vw;
-    height: 100vh;
+    height: 100%;
     background-color: #FAFFFF;
 }
 #col1 .js {
@@ -90,7 +90,7 @@ font-weight: 1.3vw;
 }
 #col2 {
     background-color: #1E1E1E;
-    padding-top: 5vw;
+    padding-top: 1vw;
     padding-bottom: 10vw;
 }
 
@@ -144,10 +144,13 @@ margin-top: 3vw;
 #nxt{
 margin-left: 20vw;
 }
+#result-tab{
+    height: 100%;
+}
 
 #score{
     font-weight: 700;
-    font-size: 4vw;
+    font-size: 6vw;
     color:#fff;
 }
 #result-percentage,
@@ -156,4 +159,8 @@ margin-left: 20vw;
     font-weight: 700;
     font-size: large;
     color: #78F7FF;
+}
+.fa{
+    color:#78F7FF;
+    padding-top: 5vw;
 }
