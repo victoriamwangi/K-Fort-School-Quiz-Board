@@ -2,7 +2,7 @@ body{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    max-height: 100vh !important;
+    
     overflow-y: hidden;
 }
 #navId{
@@ -29,6 +29,9 @@ color: #1E1E1E;
     width: 100% ;
     color: white;
     font-weight: 800;
+    height: 90%;
+    max-height: 100vh !important;
+    
 
 }
 
@@ -99,10 +102,11 @@ form {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 5vw;
 }
 
 .tabs-parent{
-    padding-top: 1.1vw;
+    padding-bottom: 2vw;
 }
 .question{
     font-size: 1.2vw;

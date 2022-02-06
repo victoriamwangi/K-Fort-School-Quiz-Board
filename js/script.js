@@ -1,12 +1,12 @@
 var btns = document.querySelectorAll(".switch-tabs");
-const tabs_main = document.querySelectorAll('.tabs');
-const tab_count = document.querySelectorAll('.tabs').length;
+const tabsMain = document.querySelectorAll('.tabs');
+const tabCount = document.querySelectorAll('.tabs').length;
 var selection_arr = [];
 
-for (var x = 0; x < tabs_main.length; x++) {
-    var tab_counter = tabs_main[x].querySelector('.tab-counter');
-    var text = (x + 1) + "/" + tab_count;
-    tab_counter.innerHTML = text;
+for (var x = 0; x < tabsMain.length; x++) {
+    var tabCounter = tabsMain[x].querySelector('.tab-counter');
+    var text = (x + 1) + "/" + tabCount;
+    tabCounter.innerHTML = text;
 }
 
 for (var i = 0; i < btns.length; i++) {
@@ -61,16 +61,16 @@ function saveSelection(selection, answer, question) {
 
 }
 function calculateFinalResult() {
-    var final_score = 0, percentage, grade
+    var finalScore = 0, percentage, grade
     questions = document.querySelectorAll('.question').length;
     for (var j = 0; j < selection_arr.length; j++) {
         var arr = selection_arr[j];
-        final_score += arr.score;
+        finalScore += arr.score;
     }
-    var result_tab = document.querySelector('#result-tab');
+    var resultTab = document.querySelector('#result-tab');
 
-    if (final_score > 0) {
-        percentage = final_score / questions * 100;
+    if (finalScore > 0) {
+        percentage = finalScore / questions * 100;
     } else {
         percentage = 0;
     }
@@ -87,12 +87,12 @@ function calculateFinalResult() {
     }
 
 
-    result_tab.querySelector('#result-score').innerHTML = final_score + " out of " + questions;
-    result_tab.querySelector('#result-percentage').innerHTML = percentage + "%";
-    result_tab.querySelector('#grade').innerHTML = "Grade: " + grade;
+    resultTab.querySelector('#result-score').innerHTML = finalScore + " out of " + questions;
+    resultTab.querySelector('#result-percentage').innerHTML = percentage + "%";
+    resultTab.querySelector('#grade').innerHTML = "Grade: " + grade;
 
     if (percentage < 80) {
-        result_tab.querySelector("#retake-test").disabled = false;
+        resultTab.querySelector("#retake-test").disabled = false;
     }
 
 }
