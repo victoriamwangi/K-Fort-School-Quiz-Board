@@ -150,7 +150,27 @@ margin-left: 20vw;
     font-size: large;
     color: #78F7FF;
 }
-.fa{
-    color:#78F7FF;
-    padding-top: 5vw;
-}
+
+@media (max-width: 576px)
+ {
+     .container{
+height: 100vh;
+     }
+     .logo h2{
+         left:0;
+         color: #1E1E1E;
+     }
+
+     #col1{
+         display: none;
+        
+     }
+     #col2{
+         width: 100%;
+
+     }
+    .switch-tabs{
+        height: 5vw;
+        width: 17vw;
+    }
+ }
