@@ -115,5 +115,3 @@ for (var a = 0; a < answers.length; a++) {
 }
 
 
-
-

@@ -1,4 +1,5 @@
 # K-Fort-School-Quiz-Board
+
 ##### By Victoria Mwangi
 
 ### I am a full stack developer dedicated to developing web applications with user friendly user interfaces and great functionalities.
@@ -15,6 +16,7 @@
 ## Description
 
 This is and a quiz board that allows a user to take a test on javascript and the results which includes the number of answers gotten right, percentage and great are outputs upon submiting the test.
+The answers for the quiz for testing are as follows: 1) option 1; 2) option 2; 3) option 3; 4) option 4 ;5) option 1.
 
 ## Installation
 
@@ -26,6 +28,7 @@ The website is accessed using a user's preffered browser therefore requires no i
 - The user also need to have an access to the Internet
 
 ### Installation Process
+
 [Go Back to the top](#installation)
 
 ## Technology Used
@@ -37,7 +40,6 @@ The website is accessed using a user's preffered browser therefore requires no i
 ## Reference
 
 - [Here is a link to the UI design](https://www.figma.com/file/8rSsSDnhB1uI5JZBWxmToy/quizpage?node-id=0%3A1)
-  
 
 ## Licence
 
@@ -61,6 +63,7 @@ SOFTWARE.
 [Go Back to the top](#description)
 
 ## Authors Info
+
 -LinkedIn - [VICTORIA MWANGI](https://www.linkedin.com/in/victoria-mwangi-5bb054203/)
 
 [Go Back to the top](#description)
